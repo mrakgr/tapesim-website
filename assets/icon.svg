@@ -1,0 +1,32 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- TapeSim app icon. Concept: a strip of ticker tape (the "tape" you read)
+       carrying a candlestick — unambiguously "market tape", legible at 16px.
+       Palette matches the app: green (#2eb888) on near-black (#101218). -->
+
+  <!-- rounded-square background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="#101218"/>
+
+  <!-- the tape: a bold vertical strip with a slight skew at the ends, like a
+       length of paper tape running top-to-bottom, with perforation holes down
+       each edge. -->
+  <g>
+    <rect x="296" y="150" width="432" height="724" rx="36" fill="#16241f" stroke="#2eb888" stroke-width="28"/>
+    <!-- perforation holes, left and right columns -->
+    <g fill="#2eb888">
+      <circle cx="348" cy="236" r="16"/><circle cx="348" cy="356" r="16"/>
+      <circle cx="348" cy="476" r="16"/><circle cx="348" cy="596" r="16"/>
+      <circle cx="348" cy="716" r="16"/><circle cx="348" cy="788" r="16"/>
+      <circle cx="676" cy="236" r="16"/><circle cx="676" cy="356" r="16"/>
+      <circle cx="676" cy="476" r="16"/><circle cx="676" cy="596" r="16"/>
+      <circle cx="676" cy="716" r="16"/><circle cx="676" cy="788" r="16"/>
+    </g>
+  </g>
+
+  <!-- a single up-candlestick centered on the tape: the clearest "trading" cue -->
+  <g stroke="#2eb888" stroke-linecap="round">
+    <!-- wick -->
+    <line x1="512" y1="250" x2="512" y2="774" stroke-width="34"/>
+    <!-- body (filled green block) -->
+    <rect x="438" y="392" width="148" height="240" rx="20" fill="#2eb888" stroke="none"/>
+  </g>
+</svg>
