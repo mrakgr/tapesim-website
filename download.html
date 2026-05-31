@@ -25,25 +25,31 @@
       <h1>Download TapeSim</h1>
       <p class="updated">Latest beta build</p>
 
-      <!-- PLACEHOLDER: no release artifacts exist yet. Once you publish builds
-           (e.g. GitHub Releases), point each href at the real download URL and
-           fill in the version/size. Remove an OS card if you don't ship it. -->
+      <!-- Self-contained single-file builds (no .NET install needed). Hosted on
+           GitHub Releases. PLACEHOLDER: replace the hrefs with the real release
+           asset URLs once the release is published. macOS deferred (needs Apple
+           notarization + a Mac). -->
       <div class="dl-grid">
         <div class="dl">
           <div class="os">Windows</div>
-          <div class="meta">.exe installer · <span class="placeholder-tag">version TBD</span></div>
-          <a class="btn btn-primary" href="#">Download</a>
-        </div>
-        <div class="dl">
-          <div class="os">macOS</div>
-          <div class="meta">.dmg · <span class="placeholder-tag">version TBD</span></div>
-          <a class="btn btn-ghost" href="#">Download</a>
+          <div class="meta">64-bit · self-contained · ~43&nbsp;MB (.zip)</div>
+          <a class="btn btn-primary" href="#">Download for Windows</a>
         </div>
         <div class="dl">
           <div class="os">Linux</div>
-          <div class="meta">AppImage · <span class="placeholder-tag">version TBD</span></div>
-          <a class="btn btn-ghost" href="#">Download</a>
+          <div class="meta">64-bit · self-contained · ~41&nbsp;MB (.zip)</div>
+          <a class="btn btn-ghost" href="#">Download for Linux</a>
         </div>
+      </div>
+      <p style="color:var(--muted);font-size:14px;margin-top:-12px">
+        No installer and no .NET runtime needed — unzip and run the app directly.
+        A macOS build is planned for a later release.
+      </p>
+
+      <div class="note warn">
+        <strong>First launch on Windows:</strong> the beta isn't code-signed yet, so
+        Windows SmartScreen may show <em>"Windows protected your PC."</em> Click
+        <strong>More info → Run anyway</strong> to start TapeSim. (Code signing comes with the full release.)
       </div>
 
       <h2>Activating your license</h2>

@@ -172,7 +172,7 @@ section .sub { text-align: center; color: var(--muted); margin: 0 auto 40px; max
 .content a { color: var(--accent); }
 
 /* ---- download page ---- */
-.dl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 8px 0 28px; }
+.dl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 8px 0 28px; }
 .dl {
   background: var(--panel); border: 1px solid var(--border); border-radius: 9px;
   padding: 24px; text-align: center;
