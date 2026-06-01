@@ -28,15 +28,20 @@
       <h1>Download TapeSim</h1>
       <p class="updated">Latest beta build</p>
 
-      <!-- Self-contained single-file builds (no .NET install needed). Hosted on
-           GitHub Releases. PLACEHOLDER: replace the hrefs with the real release
-           asset URLs once the release is published. macOS deferred (needs Apple
+      <!-- Self-contained builds (no .NET install needed). Hosted on GitHub
+           Releases. Windows ships as a Velopack installer (Setup.exe) that
+           auto-updates; a portable zip is offered for locked-down machines.
+           Linux is a self-contained zip. macOS deferred (needs Apple
            notarization + a Mac). -->
       <div class="dl-grid">
         <div class="dl">
           <div class="os">Windows</div>
-          <div class="meta">64-bit · self-contained · ~43&nbsp;MB (.zip) · v0.8.0</div>
-          <a class="btn btn-primary" href="https://github.com/mrakgr/tapesim-website/releases/download/v0.8.0/TapeSim-v0.8.0-win-x64.zip">Download for Windows</a>
+          <div class="meta">64-bit · installer · auto-updates · v0.8.0</div>
+          <a class="btn btn-primary" href="https://github.com/mrakgr/tapesim-website/releases/download/v0.8.0/TapeSim-0.8.0-win-Setup.exe">Download for Windows</a>
+          <div style="margin-top:10px;font-size:13px">
+            <a href="https://github.com/mrakgr/tapesim-website/releases/download/v0.8.0/TapeSim-0.8.0-win-Portable.zip">Portable .zip</a>
+            <span style="color:var(--muted)"> — no install, no auto-update</span>
+          </div>
         </div>
         <div class="dl">
           <div class="os">Linux</div>
@@ -45,14 +50,16 @@
         </div>
       </div>
       <p style="color:var(--muted);font-size:14px;margin-top:-12px">
-        No installer and no .NET runtime needed — unzip and run the app directly.
+        Run the Windows installer and TapeSim sets itself up (Start&nbsp;Menu shortcut)
+        and keeps itself up to date automatically — no .NET runtime needed. Prefer no
+        install? Grab the portable zip and run the app directly. On Linux, unzip and run.
         A macOS build is planned for a later release.
       </p>
 
       <div class="note warn">
-        <strong>First launch on Windows:</strong> the beta isn't code-signed yet, so
-        Windows SmartScreen may show <em>"Windows protected your PC."</em> Click
-        <strong>More info → Run anyway</strong> to start TapeSim. (Code signing comes with the full release.)
+        <strong>Running the installer on Windows:</strong> the beta isn't code-signed yet,
+        so Windows SmartScreen may show <em>"Windows protected your PC."</em> Click
+        <strong>More info → Run anyway</strong> to install TapeSim. (Code signing comes with the full release.)
       </div>
 
       <h2>Activating your license</h2>
