@@ -12,7 +12,6 @@ Your license activates on up to 3 machines. If you've moved to a new PC and hit 
 
 - Make sure the files are in the exact layout `…\.tapesim\data\databento\mbo\<SYMBOL>\<DATE>\<VENUE>.dbn.zst`. A day only appears once its folder holds at least one `…dbn.zst` file. See [Where data is stored](#where-data-is-stored).
 - If you set **`TAPESIM_DATA_ROOT`**, the library reads from *there*, not the default folder — check the files are under that path.
-- Very old beta builds used a different data location. Make sure you're up to date (the version shows in the window title); the app updates itself silently, so just relaunch.
 
 ## A venue says `no-mbo` or `out-of-range` when I quote
 

@@ -6,7 +6,7 @@ The **Library** is the home screen. It lists every market day you've downloaded 
 
 Each downloaded day is a row showing:
 
-- the **symbol** and **date** (e.g. `EOSE   2024-11-20`),
+- the **symbol** and **date** (e.g. `EOSE   2026-05-13`),
 - how many venues and how big it is (e.g. *"15 venues · 342 MB"*),
 - an **Open** button.
 

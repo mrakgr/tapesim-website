@@ -6,6 +6,8 @@ TapeSim replays real recorded market days. You download those days **straight fr
 
 Before you can download anything, TapeSim needs your Databento API key.
 
+> **At the time of writing, Databento gives new users $125 in free credits** — enough to download a good number of market days before you pay anything.
+
 1. On the **Library** screen, click the **⚙** button next to **Quote**. (If you haven't set a key yet, a yellow banner reminds you: *"No Databento API key set. Open the ⚙ menu to add your key before downloading."*)
 2. In the flyout, click **Open databento.com ↗** to create a free account and copy your API key from the portal.
 3. Paste the key (it starts with `db-…`) into the field and click **Save key**.

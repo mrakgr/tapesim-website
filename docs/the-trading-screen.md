@@ -1,6 +1,6 @@
 # The trading screen
 
-This is where you replay a session and place simulated orders. The header up top names the day and its size (e.g. *"EOSE — 2024-11-20 | 1500 snapshots | 45000 MBO records"*).
+This is where you replay a session and place simulated orders. The header up top names the day and its size (e.g. *"EOSE — 2026-05-13 | 193 snapshots | 4642481 MBO records"*).
 
 ## The toolbar
 
