@@ -30,4 +30,4 @@ On Windows, TapeSim checks for updates in the background each launch and applies
 
 ## Still stuck?
 
-Email **support@tapesim.app** with what you were doing and what you saw, and we'll help.
+Email **support@tapesim.app** with what you were doing and what you saw, and we'll help. You can also open an issue on the [tapesim-website repository](https://github.com/mrakgr/tapesim-website) if you'd rather report it publicly.
