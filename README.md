@@ -8,41 +8,45 @@ step, no framework. Hosted on GitHub Pages.
 - `index.html` — landing (hero, features, how-it-works, pricing)
 - `download.html` — downloads + license activation instructions
 - `docs.html` + `docs/*.md` — user documentation. The HTML is a thin shell; the
-  pages are Markdown rendered client-side by `marked` (CDN, SRI-pinned). `docs/_pages`
-  order lives in the `PAGES` array inside `docs.html`.
+  pages are Markdown rendered client-side by `marked` (CDN, SRI-pinned). The sidebar
+  order + valid page slugs live in the `PAGES` array inside `docs.html`; add a page
+  by dropping a `docs/<slug>.md` and adding `{ slug, title }` to that array.
 - `terms.html`, `privacy.html`, `refund.html` — legal (Lemon Squeezy expects these)
 - `styles.css` — shared styles (palette mirrors the desktop app)
 - `CNAME` — custom domain (`tapesim.app`)
 - `.nojekyll` — serve files as-is, skip Jekyll processing
 
-## Placeholders to fill before launch
+## Status
 
-Search the HTML for `PLACEHOLDER` and the red `placeholder-tag` spans:
+The site is **live at https://tapesim.app** (HTTPS enforced). TapeSim is in
+**beta**: checkout currently runs on Lemon Squeezy **test mode**, so no real
+charge is made — the download page explains the test card. Going to real
+payments is a Lemon Squeezy dashboard flip + swapping the checkout URLs below;
+no other site change.
 
-- **Lemon Squeezy checkout URL** — every `href="#"` on a "Get TapeSim" / "get a
-  license" button (`index.html`, `download.html`).
-- **Download links** — the three OS cards in `download.html` (`href="#"`); point at
-  real release artifacts (e.g. GitHub Releases). Remove any OS you don't ship.
-- **Screenshot** — drop an image at `assets/screenshot.png` and swap the
-  `.placeholder` div in `index.html` for an `<img>`.
-- **Support email** — `support@tapesim.app` throughout; set up real mail or change it.
-- **Legal details** — `LEGAL ENTITY / NAME`, `ADDRESS / JURISDICTION`, dates, and
-  the refund window in `terms.html` / `privacy.html` / `refund.html`. These are
-  drafts — have them reviewed.
+- **Downloads** — the `download.html` cards point at the GitHub Release assets on
+  this repo (`Setup.exe`, portable `.zip`, Linux `.zip`). Releases are produced by
+  the app repo's `scripts/publish.ps1`, which also bumps these links.
+- **Checkout** — the "Get TapeSim" buttons (`index.html`, `download.html`) link to
+  the Lemon Squeezy **test-mode** buy URL. Swap for the live URL at launch.
+- **Support** — `support@tapesim.app` (a dedicated Fastmail mailbox).
+- **Legal** — `terms.html` / `privacy.html` / `refund.html` are filled for personal
+  ownership (Marko Grdinić, Croatia); still carry a "draft — not legal advice"
+  banner pending review before real payments.
 
 ## Deploy (GitHub Pages)
 
-1. Create a **public** repo named `tapesim-website` on GitHub.
-2. Push this directory to it (`main` branch).
-3. Repo **Settings → Pages**: set **Source = Deploy from a branch**, branch `main`,
-   folder `/ (root)`. Save.
-4. The `CNAME` file already requests `tapesim.app`. In your domain registrar /
-   DNS, point `tapesim.app` at GitHub Pages:
-   - apex `tapesim.app`: A records to `185.199.108.153`, `185.199.109.153`,
-     `185.199.110.153`, `185.199.111.153` (GitHub Pages IPs), and/or an `ALIAS`/
-     `ANAME` if your DNS supports it.
-   - `www.tapesim.app`: CNAME to `mrakgr.github.io`.
-5. Back in Settings → Pages, tick **Enforce HTTPS** once the cert is issued.
+Already set up — pushes to `main` auto-deploy. Recorded here for reference:
+
+- **Source:** Settings → Pages → Deploy from a branch, `main`, `/ (root)`.
+- **DNS** (at Cloudflare): apex `tapesim.app` → A records `185.199.108.153`,
+  `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` → CNAME
+  `mrakgr.github.io`. All **DNS-only** (grey cloud). The `CNAME` file pins the
+  custom domain — don't delete it (doing so drops the domain).
+- **HTTPS:** Enforce HTTPS is on (Let's Encrypt, auto-renewed).
+- **Mail** is separate: `tapesim.app` MX points at Fastmail; the website A/CNAME
+  records are independent, so never touch the MX/SPF/DKIM records when editing the
+  site DNS.
 
 ## Local preview
 

@@ -159,11 +159,6 @@ section .sub { text-align: center; color: var(--muted); margin: 0 auto 40px; max
   padding: 16px 20px; color: var(--muted); font-size: 15px; margin: 18px 0;
 }
 .note.warn { border-left-color: var(--loss); }
-.placeholder-tag {
-  display: inline-block; background: rgba(229,75,75,0.12); color: var(--loss);
-  border: 1px solid rgba(229,75,75,0.4); border-radius: 4px;
-  padding: 1px 7px; font-size: 12px; font-family: ui-monospace, "SF Mono", Menlo, monospace;
-}
 
 /* ---- legal / content pages ---- */
 .content { padding: 56px 0; }
