@@ -6,7 +6,7 @@ Sim trading is unlocked with a license. Viewing the tape is always free.
 
 When you buy TapeSim through the checkout, **Lemon Squeezy** (our payment provider) emails you a **license key** — a long code that looks like `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`.
 
-> **Beta note:** during the beta, checkout runs on Lemon Squeezy **test mode**, so no real money is charged. Pay with the Stripe test card `4242 4242 4242 4242`, any future expiry date, any CVC and postal code. A real card is declined in test mode.
+> **Beta note:** TapeSim is free during the beta — no purchase needed. Activate sim trading with the shared beta key `7645AE99-A293-4DAF-8C3A-C91F97BA8469`. (Paid, per-customer licenses arrive when TapeSim leaves beta.)
 
 ## Activating
 
