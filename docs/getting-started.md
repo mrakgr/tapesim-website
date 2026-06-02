@@ -5,7 +5,7 @@ TapeSim is a desktop order-flow simulator. It replays real recorded market days 
 ## Install
 
 1. Download **TapeSim** for your operating system from the [download page](download.html). Windows is the primary build (an installer that keeps itself up to date); Linux is a self-contained zip.
-2. **Windows:** run `TapeSim-…-win-Setup.exe`. The beta isn't code-signed yet, so Windows SmartScreen may say *"Windows protected your PC"* — click **More info → Run anyway**. The app installs for your user, adds a Start Menu shortcut, and from then on **updates itself silently** (you'll see the version in the window title bump after an update).
+2. **Windows:** run `TapeSim-…-win-Setup.exe`. TapeSim isn't code-signed yet, so Windows SmartScreen may say *"Windows protected your PC"* — click **More info → Run anyway**. The app installs for your user, adds a Start Menu shortcut, and from then on **updates itself silently** (you'll see the version in the window title bump after an update).
 3. **Linux:** unzip and run the `TapeSim.Ui` binary directly.
 
 > Prefer not to install on Windows? A **portable .zip** is also on the download page — unzip and run, no installer (but it won't auto-update).

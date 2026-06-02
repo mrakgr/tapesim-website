@@ -18,31 +18,29 @@ step, no framework. Hosted on GitHub Pages.
 
 ## Status
 
-The site is **live at https://tapesim.app** (HTTPS enforced). TapeSim is in
-**beta** and **free**: testers download the app and unlock sim trading with a
-single **shared beta license key** (printed on the hero, pricing card, download
-steps, and the docs activation page). No purchase or checkout is needed during
-the beta.
+The site is **live at https://tapesim.app** (HTTPS enforced). TapeSim sells as a
+**€50/mo subscription with a 7-day free trial** — checkout via Lemon Squeezy emails
+the buyer a license key; the trial means no charge until day 8, cancel before then
+to pay nothing. No beta keys, no shared keys: the trial is the try-before-you-buy.
 
-> Why a shared key instead of checkout: Lemon Squeezy **test mode does not email
-> license keys to the buyer** — they all go to the store-owner account — so the
-> old "buy with the `4242` test card → get a key by email" path was a dead end for
-> testers. Instead we hand out one key generated in the LS dashboard with
-> **unlimited activations**, so anyone can activate. Trade-off: the key is public,
-> so anyone who finds the site can unlock sim trading — intended for a free beta.
-> **At go-live: disable/rotate this beta key**, flip the store to live mode, and
-> switch the buttons to a real per-customer checkout.
+> Going straight to release (no public beta). The earlier shared-beta-key idea was
+> dropped — Lemon Squeezy **test mode doesn't email keys to the buyer** (they go to
+> the store owner), which made a self-serve test-mode flow impossible, and a public
+> unlimited key was a leak risk. A 7-day trial sidesteps both. **At go-live: flip
+> the LS store to live mode** (the test-mode beta key stops validating on its own,
+> since test keys don't match the live store) — no client code change (test vs live
+> is purely which store a key belongs to; see `tapesim/TapeSim.Ui/LemonSqueezy.fs`).
 
 - **Downloads** — the `download.html` cards point at the GitHub Release assets on
   this repo (`Setup.exe`, portable `.zip`, Linux `.zip`). Releases are produced by
   the app repo's `scripts/publish.ps1`, which also bumps these links.
-- **Checkout** — the "Get TapeSim" buttons (`index.html`) still link to the Lemon
-  Squeezy **test-mode** buy URL (kept for layout), but the *working* beta path is
-  the shared key above, not checkout. Swap for the live URL at launch.
+- **Checkout** — the "Start a free trial" buttons (`index.html`, `download.html`)
+  link to the Lemon Squeezy buy URL (currently the **test-mode** checkout). Swap for
+  the live URL when the store flips to live mode.
 - **Support** — `support@tapesim.app` (a dedicated Fastmail mailbox).
 - **Legal** — `terms.html` / `privacy.html` / `refund.html` are filled for personal
-  ownership (Marko Grdinić, Croatia); still carry a "draft — not legal advice"
-  banner pending review before real payments.
+  ownership (Marko Grdinić, Croatia — sole proprietorship until revenue justifies an
+  obrt). Refund policy: no refunds after the 7-day trial.
 
 ## Deploy (GitHub Pages)
 

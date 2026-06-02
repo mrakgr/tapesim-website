@@ -2,7 +2,7 @@
 
 ## "Windows protected your PC" when installing
 
-The beta isn't code-signed yet, so Windows SmartScreen warns on the installer. Click **More info → Run anyway** to continue. Code signing comes with the full release.
+TapeSim isn't code-signed yet, so Windows SmartScreen warns on the installer. Click **More info → Run anyway** to continue. Code signing is coming.
 
 ## "This license is activated on a different machine"
 
