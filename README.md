@@ -19,16 +19,26 @@ step, no framework. Hosted on GitHub Pages.
 ## Status
 
 The site is **live at https://tapesim.app** (HTTPS enforced). TapeSim is in
-**beta**: checkout currently runs on Lemon Squeezy **test mode**, so no real
-charge is made — the download page explains the test card. Going to real
-payments is a Lemon Squeezy dashboard flip + swapping the checkout URLs below;
-no other site change.
+**beta** and **free**: testers download the app and unlock sim trading with a
+single **shared beta license key** (printed on the hero, pricing card, download
+steps, and the docs activation page). No purchase or checkout is needed during
+the beta.
+
+> Why a shared key instead of checkout: Lemon Squeezy **test mode does not email
+> license keys to the buyer** — they all go to the store-owner account — so the
+> old "buy with the `4242` test card → get a key by email" path was a dead end for
+> testers. Instead we hand out one key generated in the LS dashboard with
+> **unlimited activations**, so anyone can activate. Trade-off: the key is public,
+> so anyone who finds the site can unlock sim trading — intended for a free beta.
+> **At go-live: disable/rotate this beta key**, flip the store to live mode, and
+> switch the buttons to a real per-customer checkout.
 
 - **Downloads** — the `download.html` cards point at the GitHub Release assets on
   this repo (`Setup.exe`, portable `.zip`, Linux `.zip`). Releases are produced by
   the app repo's `scripts/publish.ps1`, which also bumps these links.
-- **Checkout** — the "Get TapeSim" buttons (`index.html`, `download.html`) link to
-  the Lemon Squeezy **test-mode** buy URL. Swap for the live URL at launch.
+- **Checkout** — the "Get TapeSim" buttons (`index.html`) still link to the Lemon
+  Squeezy **test-mode** buy URL (kept for layout), but the *working* beta path is
+  the shared key above, not checkout. Swap for the live URL at launch.
 - **Support** — `support@tapesim.app` (a dedicated Fastmail mailbox).
 - **Legal** — `terms.html` / `privacy.html` / `refund.html` are filled for personal
   ownership (Marko Grdinić, Croatia); still carry a "draft — not legal advice"
