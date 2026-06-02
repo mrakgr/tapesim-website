@@ -61,7 +61,7 @@ Already set up — pushes to `main` auto-deploy. Recorded here for reference:
 Run a static server from this dir and open `http://localhost:8000`:
 
 ```
-python3 -m http.server 8000
+python3 -m http.server 8001
 ```
 
 **The docs page must be served over HTTP, not opened as a `file://` URL.** `docs.html`
