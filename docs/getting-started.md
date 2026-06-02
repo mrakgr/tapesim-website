@@ -2,6 +2,8 @@
 
 TapeSim is a desktop order-flow simulator. It replays real recorded market days — the Level-2 book, time & sales, and a DOM ladder — tick by tick, and lets you place **simulated** orders against that flow to practice reading the tape. No broker, no real money.
 
+> **Prefer to watch?** The [video tutorials](#video-tutorials) walk through the whole app, starting with the intro.
+
 ## Install
 
 1. Download **TapeSim** for your operating system from the [download page](download.html). Windows is the primary build (an installer that keeps itself up to date); Linux is a self-contained zip.
