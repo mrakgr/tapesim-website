@@ -58,7 +58,7 @@ Already set up — pushes to `main` auto-deploy. Recorded here for reference:
 
 ## Local preview
 
-Run a static server from this dir and open `http://localhost:8000`:
+Run a static server from this dir and open `http://localhost:8001`:
 
 ```
 python3 -m http.server 8001
