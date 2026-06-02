@@ -19,7 +19,7 @@ Your key is stored locally and reused for every download afterward.
 
 In the **Download a new day** form:
 
-1. Enter a **Symbol** (e.g. `EOSE`) and a **Date** (`YYYY-MM-DD`).
+1. Enter a **Symbol** (e.g. `EOSE`) and a **Date** (`YYYY-MM-DD`). Not sure what to try? Pick from the [gap play examples](#gap-play-examples).
 2. Click **Quote**. TapeSim asks Databento which venues have data for that ticker-day and what it costs. You'll see *"Quoting…"* with an elapsed timer.
 
 The result is a table, one row per venue:
