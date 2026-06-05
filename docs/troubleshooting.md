@@ -4,9 +4,9 @@
 
 TapeSim isn't code-signed yet, so Windows SmartScreen warns on the installer. Click **More info → Run anyway** to continue. Code signing is coming.
 
-## "This license is activated on a different machine"
+## "You've reached the activation limit for this license"
 
-Your license activates on up to 3 machines. If you've moved to a new PC and hit the limit, either click **Activate** on the new machine (it uses one of your 3 activations) or email **support@tapesim.app** to extend your limit or free up the old machine. See [Activating your license](#activating-your-license).
+Your license activates on up to 3 machines. If you've moved to a new PC and hit the limit, free a slot yourself: open your **Polar customer portal**, find your license key, and **deactivate** the machine you no longer use — then click **Activate** again in TapeSim. (Or email **support@tapesim.app** and we'll help.) See [Activating your license](#activating-your-license).
 
 ## My downloaded days don't show up in the library
 

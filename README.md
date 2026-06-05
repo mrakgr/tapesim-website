@@ -11,7 +11,7 @@ step, no framework. Hosted on GitHub Pages.
   pages are Markdown rendered client-side by `marked` (CDN, SRI-pinned). The sidebar
   order + valid page slugs live in the `PAGES` array inside `docs.html`; add a page
   by dropping a `docs/<slug>.md` and adding `{ slug, title }` to that array.
-- `terms.html`, `privacy.html`, `refund.html` — legal (Lemon Squeezy expects these)
+- `terms.html`, `privacy.html`, `refund.html` — legal (the payment provider expects these)
 - `styles.css` — shared styles (palette mirrors the desktop app)
 - `CNAME` — custom domain (`tapesim.app`)
 - `.nojekyll` — serve files as-is, skip Jekyll processing
@@ -19,24 +19,24 @@ step, no framework. Hosted on GitHub Pages.
 ## Status
 
 The site is **live at https://tapesim.app** (HTTPS enforced). TapeSim sells as a
-**€50/mo subscription with a 7-day free trial** — checkout via Lemon Squeezy emails
-the buyer a license key; the trial means no charge until day 8, cancel before then
-to pay nothing. No beta keys, no shared keys: the trial is the try-before-you-buy.
+**€50/mo subscription with a 7-day free trial** via **Polar** (Merchant of Record).
+After checkout the buyer's license key appears in their Polar customer portal
+(linked from the receipt email); the trial means no charge until day 8, cancel
+before then to pay nothing. The trial is the try-before-you-buy — no beta keys.
 
-> Going straight to release (no public beta). The earlier shared-beta-key idea was
-> dropped — Lemon Squeezy **test mode doesn't email keys to the buyer** (they go to
-> the store owner), which made a self-serve test-mode flow impossible, and a public
-> unlimited key was a leak risk. A 7-day trial sidesteps both. **At go-live: flip
-> the LS store to live mode** (the test-mode beta key stops validating on its own,
-> since test keys don't match the live store) — no client code change (test vs live
-> is purely which store a key belongs to; see `tapesim/TapeSim.Ui/LemonSqueezy.fs`).
+> Payments moved from Lemon Squeezy to **Polar** (2026-06-05) after LS rejected the
+> store. Polar is also an MoR (handles EU VAT), has a client-callable license API
+> (no server, no secret), and a customer portal where buyers self-serve their key +
+> manage activations. The desktop client talks to Polar directly — see
+> `tapesim/TapeSim.Ui/Polar.fs`. Sandbox vs production is just the API base + org id;
+> shipped (Release) builds are hardcoded to production.
 
 - **Downloads** — the `download.html` cards point at the GitHub Release assets on
   this repo (`Setup.exe`, portable `.zip`, Linux `.zip`). Releases are produced by
   the app repo's `scripts/publish.ps1`, which also bumps these links.
 - **Checkout** — the "Start a free trial" buttons (`index.html`, `download.html`)
-  link to the Lemon Squeezy buy URL (currently the **test-mode** checkout). Swap for
-  the live URL when the store flips to live mode.
+  link to the Polar checkout (`buy.polar.sh/...`). Live as soon as Polar approves
+  the store in onboarding review.
 - **Support** — `support@tapesim.app` (a dedicated Fastmail mailbox).
 - **Legal** — `terms.html` / `privacy.html` / `refund.html` are filled for personal
   ownership (Marko Grdinić, Croatia — sole proprietorship until revenue justifies an
