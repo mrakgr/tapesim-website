@@ -8,9 +8,9 @@ Click a thumbnail to open the video on YouTube.
 A tour of the app: downloading a market day, loading it, and reading the tape on
 the DOM ladder with simulated orders.
 
-[![Watch the TapeSim intro on YouTube](https://img.youtube.com/vi/9beCwzb4QOw/maxresdefault.jpg)](https://youtu.be/9beCwzb4QOw)
+[![Watch the TapeSim intro on YouTube](https://img.youtube.com/vi/kjfALKbvgbI/maxresdefault.jpg)](https://youtu.be/kjfALKbvgbI)
 
-▶ [Watch on YouTube](https://youtu.be/9beCwzb4QOw)
+▶ [Watch on YouTube](https://youtu.be/kjfALKbvgbI)
 
 ---
 
