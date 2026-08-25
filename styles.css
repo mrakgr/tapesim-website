@@ -191,8 +191,9 @@ footer.site {
 footer.site .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 footer.site a { color: var(--muted); margin-right: 18px; }
 footer.site a:hover { color: var(--text); }
-footer.site .launchpadly { display: flex; align-items: center; }
-footer.site .launchpadly a { margin-right: 0; }
+footer.site .badges { display: flex; align-items: center; gap: 12px; }
+footer.site .badges a { margin-right: 0; }
+footer.site .badges img { display: block; border: 0; height: 48px; width: auto; }
 
 /* ---- docs (docs.html) ---- */
 /* Two-column shell: a sticky sidebar nav + a content pane where the selected
